@@ -1,0 +1,121 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Blake Eastman} \\
+  \small (858) 568-5810 $|$ \href{mailto:blakeeastman1212@gmail.com}{blakeeastman1212@gmail.com} 
+\end{center}
+
+\section*{Summary}
+Data analysis using python and MATLAB makes up the largest portion of my research experience. However, for my capstone I also gained experience in experimental design in the context of atomic physics. My broad interest in physics is quantum mechanics; at the academy I took several additional elective classes which delved into topics such as quantum computation and particle physics, all employing quantum mechanics.
+
+
+\section{Research}
+\resumeSubHeadingList
+  \resumeSubheading
+      {GEO Satellite Polarimetry}{August 2021 -- May 2022}{}{USAFA, CO}
+      \resumeSubHeadingList
+		  	\resumeItem{\textbullet\ Measured polarization of light reflected from GEO communication satellites using USAFA 16-inch telescope}
+          	\resumeItem{\textbullet\ Developed MATLAB software to convert raw polarimeter data to polarization vs time and polarization vs position plots}
+          	\resumeItem{\textbullet\ Compared GEO polarization timeseries to polarization of solar panels and spacecraft materials to identify solar panel, bus, and payload contributions to polarization signature}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Silicon Spectroscopy}{January 2023 -- May 2024} 
+      {}{USAFA, CO}
+      \resumeSubHeadingList
+			\resumeItem{\textbullet\ Collected spectra of silicon-28, silicon-29, silicon-30 using a 252.4 nm laser to determine isotope shift and scalar polarizability}
+			\resumeItem{\textbullet\ Designed and constructed the experimental apparatus to measure silicon scalar polarizability, including 3D printed mounting brackets for parallel conducting plates}
+			\resumeItem{\textbullet\ Analyzed spectra with Python to compute an experimental value for the scalar polarizability of silicon at this transition}
+		\resumeSubHeadingListEnd	 
+	\resumeSubheading{Snapshot Polarimetry for SSA}{June 2023-July 2023}{}{15 SPSS, HI}
+		\resumeSubHeadingList
+			\resumeItem{\textbullet\ Installed novel snapshot polarimeter (utilizing a vortex halfwave plate) onto a 1-meter sea level telescope}
+			\resumeItem{\textbullet\ Simulated polarimetry measurements of target satellites using Python}
+			\resumeItem{\textbullet\ Prototyped polarimeter data reduction software in python, tested using aforementioned simulated measurements}
+		\resumeSubHeadingListEnd
+	\resumeSubheading{Geometric Algebra and Spinors}{August 2023 -- May 2024}{}{USAFA, CO}
+		\resumeSubHeadingList
+			\resumeItem{\textbullet\ Studied alternative formalism to traditional vector algebra known as geometric/clifford algebra}
+			\resumeItem{\textbullet\ Applied mathematical structures (rotors and projectors) available in geometric algebra formalism to explore new representations of Weyl and Dirac spinors}
+		\resumeSubHeadingListEnd
+	\resumeSubHeadingListEnd
+
+\section{Cadet Experience}
+\resumeSubHeadingList
+	\resumeSubheading{Outstanding Cadet in Physics}{May 2024}{}{}
+	\resumeSubHeadingList
+		\resumeItem{\textbullet\ Received this award given to the top physics major in the graduating class}
+	\resumeSubHeadingListEnd
+	\resumeSubheading{Operations Flight Commander}{January 2024 -- May 2024}{}{}
+	\resumeSubHeadingList
+		\resumeItem{\textbullet\ Lead a flight of approximately 30 individuals} 
+		\resumeItem{\textbullet\ Directed elements responsible for ensuring the squadrom met academic, athletic, and drill/ceremony requirements}
+	\resumeSubHeadingListEnd
+	\resumeSubheading{Diversity and Inclusion Officer / NCOIC}{August 2022 -- December 2023}{}{}
+	\resumeSubHeadingList
+		\resumeItem{\textbullet\ Facilitated education and training on Air Force diversity, equity, and inclusion policy for a squadron of 100 individuals}
+	\resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {United States Air Force Academy}{Colorado Springs, CO}
+      {B.S. in Physics}{June 2020 -- May 2024}
+\resumeSubHeadingListEnd
+
+
+\end{document}
